@@ -26,7 +26,7 @@ File: main stylesheet
   --dark-gray: #1f2833;
   --light-gray: #c5c6c7;
   --light-cyan: #66fcf1;
-  --bright-cyan: #45a29e;
+  --bright-cyan: #00acee;
 
 }
 
@@ -2798,8 +2798,8 @@ header#topnav.scroll .has-search .form-control-feedback {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   color: #ffffff;
-  border-color: #45a29e;
-  background-color: #45a29e;
+  border-color: #00acee;
+  background-color: #00acee;
 }
 
 .tagline .email, .tagline .phone {
@@ -2812,7 +2812,7 @@ header#topnav.scroll .has-search .form-control-feedback {
   padding-right: 10px;
 }
 .tagline {
-  background: #45a29ea1;
+  background: #00aceea1;
 }
 
 .section {
@@ -2836,11 +2836,11 @@ header#topnav.scroll .has-search .form-control-feedback {
 }
 
 header#topnav.scroll .has-search .form-control-feedback {
-  color: #45a29e;
+  color: #00acee;
 }
 
 #topnav.scroll .navigation-menu > li:hover > a, #topnav.scroll .navigation-menu > li.active > a {
-  color: #45a29e;
+  color: #00acee;
 }
 
 .has-search .form-control {
@@ -2940,4 +2940,23 @@ label.cabinet input.file{
 
 .sq-input.form-control.sq-input--error {
     border-color: #e43f52;
+}
+.tagline {
+    background: #3c4858;
+}
+#topnav.defaultscroll:not(.scroll) {
+    background-color: #00acee;
+}
+#topnav .navigation-menu > li > a {
+    display: block;
+    color: rgb(255 255 255); !important;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active, .btn.btn-primary.active, .btn.btn-primary.focus{
+    background-color: #00aceead !important;
+    border-color:  var(--bright-cyan) !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before, .form-control:focus, .nice-select:active, .nice-select.open, .nice-select:focus {
+    border-color: #3c4858 !important;
 }
